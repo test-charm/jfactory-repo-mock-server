@@ -1,10 +1,10 @@
 package com.yaoruozhou.jfactory.cucumber;
 
-import com.github.leeonky.jfactory.DataRepository;
-import com.github.leeonky.jfactory.JFactory;
 import com.yaoruozhou.jfactory.cucumber.get.*;
 import com.yaoruozhou.jfactory.cucumber.post.*;
 import com.yaoruozhou.jfactory.cucumber.put.*;
+import org.testcharm.jfactory.DataRepository;
+import org.testcharm.jfactory.JFactory;
 
 public class EntityFactory extends JFactory {
 

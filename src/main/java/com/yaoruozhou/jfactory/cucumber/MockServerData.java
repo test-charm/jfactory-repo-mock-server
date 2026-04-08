@@ -1,13 +1,13 @@
 package com.yaoruozhou.jfactory.cucumber;
 
-import com.github.leeonky.jfactory.JFactory;
-import com.github.leeonky.jfactory.cucumber.JData;
-import com.github.leeonky.jfactory.cucumber.Table;
 import com.yaoruozhou.jfactory.MockServerDataRepository;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.zh_cn.假如;
 import io.cucumber.java.zh_cn.那么;
+import org.testcharm.jfactory.JFactory;
+import org.testcharm.jfactory.cucumber.JData;
+import org.testcharm.jfactory.cucumber.Table;
 
 import java.util.function.Function;
 

@@ -1,6 +1,6 @@
 package com.yaoruozhou.jfactory;
 
-import com.github.leeonky.jfactory.DataRepository;
+import org.testcharm.jfactory.DataRepository;
 
 import java.util.function.Function;
 

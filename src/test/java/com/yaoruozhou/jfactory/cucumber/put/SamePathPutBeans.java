@@ -1,6 +1,6 @@
 package com.yaoruozhou.jfactory.cucumber.put;
 
-import com.github.leeonky.jfactory.Spec;
+import org.testcharm.jfactory.Spec;
 
 public class SamePathPutBeans {
 

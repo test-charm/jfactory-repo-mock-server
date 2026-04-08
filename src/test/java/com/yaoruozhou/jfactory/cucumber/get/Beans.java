@@ -1,7 +1,7 @@
 package com.yaoruozhou.jfactory.cucumber.get;
 
-import com.github.leeonky.jfactory.Spec;
-import com.github.leeonky.jfactory.Trait;
+import org.testcharm.jfactory.Spec;
+import org.testcharm.jfactory.Trait;
 
 public class Beans {
 

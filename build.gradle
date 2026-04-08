@@ -34,7 +34,7 @@ task sourcesJar(type: Jar) {
 }
 
 group = 'com.yaoruozhou'
-version = '0.5.1'
+version = '0.6.0'
 sourceCompatibility = 1.8
 
 jacocoTestReport {
@@ -50,15 +50,15 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.leeonky:jfactory:0.3.20'
-    implementation 'com.github.leeonky:jfactory-cucumber:0.1.24'
+    implementation 'org.test-charm:jfactory:1.0.0-alpha.10'
+    implementation 'org.test-charm:jfactory-cucumber:1.0.0-alpha.10'
     implementation 'org.mock-server:mockserver-client-java:5.13.2'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.4'
     implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.12.4'
     implementation 'org.projectlombok:lombok:1.18.12'
     annotationProcessor 'org.projectlombok:lombok:1.18.12'
     implementation("io.cucumber:cucumber-java:6.11.0")
-    implementation 'com.github.leeonky:bean-util:0.6.3'
+    implementation 'org.test-charm:bean-util:1.0.0-alpha.10'
 
     testImplementation("io.cucumber:cucumber-spring:6.11.0")
     testImplementation('org.springframework.boot:spring-boot-starter-test:2.4.4') {
@@ -70,7 +70,7 @@ dependencies {
     testImplementation 'org.assertj:assertj-core:3.15.0'
     testImplementation 'org.mock-server:mockserver-netty:5.13.2'
     testImplementation 'org.mockito:mockito-core:3.12.2'
-    testImplementation 'com.github.leeonky:RESTful-cucumber:0.0.16'
+    testImplementation 'org.test-charm:RESTful-cucumber:1.0.0-alpha.10'
     testImplementation('org.json:json:20220924')
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.6.3'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
@@ -158,7 +158,7 @@ task cucumber(type: JavaExec) {
     classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
     args = ['--plugin', 'pretty',
             '--glue', 'com.yaoruozhou',
-            '--glue', 'com.github.leeonky',
+            '--glue', 'org.testcharm',
             'src/test/resources']
 }
 

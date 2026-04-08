@@ -1,9 +1,9 @@
-package com.github.leeonky.dal.extensions;
+package org.testcharm.extensions.dal;
 
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
-import com.github.leeonky.dal.DAL;
-import com.github.leeonky.dal.runtime.Extension;
 import lombok.SneakyThrows;
+import org.testcharm.dal.DAL;
+import org.testcharm.dal.runtime.Extension;
 
 import java.util.Map;
 

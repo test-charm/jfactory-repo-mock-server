@@ -2,7 +2,6 @@ package com.yaoruozhou.jfactory.cucumber;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.github.leeonky.cucumber.restful.RestfulStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.spring.CucumberContextConfiguration;
@@ -10,6 +9,7 @@ import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootContextLoader;
 import org.springframework.test.context.ContextConfiguration;
+import org.testcharm.cucumber.restful.RestfulStep;
 
 import java.util.List;
 import java.util.Map;
@@ -24,6 +24,7 @@ public class ApplicationSteps {
     @Before
     public void setBaseUrl() {
         restfulStep.setBaseUrl("http://127.0.0.1:9081");
+        restfulStep.setDefaultContentType("application/json");
     }
 
     @SneakyThrows
