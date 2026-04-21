@@ -24,7 +24,6 @@ public class ApplicationSteps {
     @Before
     public void setBaseUrl() {
         restfulStep.setBaseUrl("http://127.0.0.1:9081");
-        restfulStep.setDefaultContentType("application/json");
     }
 
     @SneakyThrows

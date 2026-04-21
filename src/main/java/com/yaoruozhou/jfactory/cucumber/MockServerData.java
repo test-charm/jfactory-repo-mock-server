@@ -7,7 +7,6 @@ import io.cucumber.java.zh_cn.假如;
 import io.cucumber.java.zh_cn.那么;
 import org.testcharm.jfactory.JFactory;
 import org.testcharm.jfactory.cucumber.JData;
-import org.testcharm.jfactory.cucumber.Table;
 
 import java.util.function.Function;
 
@@ -33,21 +32,21 @@ public class MockServerData {
 
     @Given("Exists api data {string} with params {string}:")
     @假如("存在接口数据{string}并匹配查询参数{string}:")
-    public void prepareApiDataWithParams(String spec, String params, Table table) {
+    public void prepareApiDataWithParams(String spec, String params, JData.DocData table) {
         dataRepository.setUrlParams(params);
         prepareApiData(spec, table);
     }
 
     @Given("Exists api data {string}:")
     @假如("存在接口数据{string}:")
-    public void prepareApiData(String spec, Table table) {
+    public void prepareApiData(String spec, JData.DocData table) {
         setRootClass(spec);
         jData.prepare(spec, table);
     }
 
     @Given("Exists api data {string} with path variables {string}:")
     @假如("存在接口数据{string}并匹配路径变量{string}:")
-    public void prepareApiDataWithPathVariables(String spec, String pathVariables, Table table) {
+    public void prepareApiDataWithPathVariables(String spec, String pathVariables, JData.DocData table) {
         dataRepository.setPathVariables(pathVariables);
         prepareApiData(spec, table);
     }
